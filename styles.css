@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+/*media (max-width: 1000px) and (min-width: 726px)
+Phones: 320 - 767
+Tablets: 768 - 1023
+Desktop: 1024+ */
+
+@media (min-width: 1024px){
+body {
+	font-family: sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+}
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		"a a"
+		"b c";
+	margin: 2rem 0;
+	}	
+. grid::before {
+	content: 'display: grid';
+	}
+.grid main {
+	grid-area: a;
+	background-color: #ffffff;
+}
+.grid contact {
+	background-color: #685381;
+}
+}
