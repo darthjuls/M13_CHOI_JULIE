@@ -1,10 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-/*media (max-width: 1000px) and (min-width: 726px)
-Phones: 320 - 767
-Tablets: 768 - 1023
-Desktop: 1024+ */
-
 body {
 	font-family: sans-serif;
 	text-align: center;
@@ -16,6 +11,7 @@ header img {
 	height: auto;
 }
 h1 {
+	margin-top: -.1em;
 	text-transform: uppercase;
 	font-family: 'Alata', sans-serif;
 	color: #685381;
@@ -25,11 +21,15 @@ h2 {
 	text-transform: uppercase;
 	font-family: 'Alata', sans-serif;
 	color: #685381;
+	margin-top: -.1em;
 	}
 h3 {
 	text-transform: uppercase;
 	font-family: 'Alata', sans-serif;
 	color: #fffff;
+}
+p {
+	text-align: left;
 }
 nav {
     background-image: -webkit-linear-gradient(left, #F6D0C0, #D8A8D3, #B8CBE5);
@@ -43,7 +43,7 @@ nav ul {
 nav ul li {
 	display: inline;
 	font-size: 1.25rem;
-	padding: 4em;
+	padding: 3.5em;
 }
 nav li a {
 	color: #ffffff;
@@ -69,15 +69,17 @@ nav li a {
 }
 .flex contactus {
 	flex-basic: 50%;
-	background-color: #685381;
 	padding: 1em;
 }
 .flex image {
 	flex-basic: 50%;
 	padding: 1em;
 }
-.flex footer {
-	flex-basic: 100%;
+.flex image {
+	width: 40vw;
+}
+.contactus {
+	background-color: #685381;
 }
 /*.grid {
   	display: grid;
@@ -105,13 +107,13 @@ nav li a {
 .image {
 	grid-area: 4;
 	width: 45vw;
-	}
+	}*/
 footer {
 	background-image: -webkit-linear-gradient(left, #F6D0C0, #D8A8D3, #B8CBE5);
 	width: 100%;
 	padding: .25em;
 	
-	}*/
+	}
 footer ul {
 	color: #ffffff;
 	list-style-type: none;
@@ -121,4 +123,7 @@ footer ul {
 footer a {
 	color: #ffffff;
 	text-decoration: none;
+}
+footer ul li {
+	display: inline-block;
 }
