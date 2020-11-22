@@ -86,26 +86,41 @@ nav li a {
 /*TYPES*/
 .types {
 	display: inline;
+	text-align: center;
 }
 .thumbnail {
 	float: left;
-	padding: 1.5em;
+	padding: 1.25em;
 }
 #bouquets {
-	border: 1.5em solid #D8A8D3;
+	border-left: 2em solid #D8A8D3;
+	border-right: 2em solid #D8A8D3;
+	border-top: 1.5em solid #D8A8D3;
+	border-bottom:3em solid #D8A8D3;
 	width: 20vw;
 }
 #arrangements {
-	border: 2em solid #B8CBE5;
+	border-left: 2em solid #B8CBE5;
+	border-right: 2em solid #B8CBE5;
+	border-top: 1.5em solid #B8CBE5;
+	border-bottom: 3em solid #B8CBE5;
 	width: 20vw;	
 }
 #occasions {
-	border: 2em solid #F6D0C0;
+	border-left: 2em solid #F6D0C0;
+	border-right: 2em solid #F6D0C0;
+	border-top: 1.5em solid #F6D0C0;
+	border-bottom: 3em solid #F6D0C0;
 	width: 20vw;	
 }
 .thumbnail h3 {
 	text-decoration: none;
-	color: #fffff;
+	color: #ffffff;
+	position: absolute;
+	text-shadow: 1px 1px 1px #808080;
+	margin-top: -2em;
+
+	
 }
 .cards {
 	width: 100%;
@@ -161,5 +176,6 @@ footer a {
 	text-decoration: none;
 }
 footer ul li {
-	display: inline-block;
+	display: inline;
+	width: 25vw;
 }
