@@ -17,9 +17,9 @@
 			<nav>
 				<ul>
 				<li class="home"><a href ="index.html">Home</a></li>
-				<li class="about"><a href ="fakeabout.html">About</a></li>
-				<li class="shop"><a href ="fakeshop.html">Shop</a></li>
-				<li class="contact"><a href ="fakecontact.html">Contact</a></li>
+				<li class="about"><a href ="about.html">About</a></li>
+				<li class="shop"><a href ="shop.html">Shop</a></li>
+				<li class="contact"><a href ="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -29,12 +29,20 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis nisi quis eros ullamcorper ultricies. Suspendisse sit amet urna vulputate, bibendum urna commodo, congue dui. Sed tristique odio in risus pretium, vel maximus mauris vehicula. Integer non ante ac diam pulvinar ultricies eget ac velit. Donec tincidunt diam neque, accumsan sodales ex euismod et. Integer congue erat et vulputate fermentum. Aenean vitae sagittis augue, nec maximus purus. Cras consequat aliquam tempus. Integer auctor tortor eros, nec scelerisque diam porttitor id. In rhoncus ex vel tellus ultricies, ut.</p>
 			</div>
 			<div class="types">
-				<img src="images/bouquet.jpeg" alt="bouquet">
-				<h3>Bouquets</h3>
-				<img src="images/arrangement.jpeg" alt="arrangement">
-				<h3>Arrangements</h3>
-				<img src="images/specialty.jpg" alt="occasion">
-				<h3>Special Occasions</h3>
+				<div class="thumbnail">
+					<a href="bouquets.html"><img src="images/bouquet.jpeg" alt="bouquets" class="cards"?></a>
+      				<h3>Bouquets</h3>
+    			</div>
+    			<div class="thumbnail">
+					<a hhref="arrangements.html">
+					<img src="images/arrangement.jpeg" alt="arrangements" class="cards"/></a>
+      				<h3>Arrangements</h3>
+    			</div>
+    			<div class="thumbnail">
+					<a href="occasions.html">
+					<img src="images/specialty.jpg" alt="occasions" class="cards"/></a>
+      				<h3>Special Occasions</h3>
+				</div>
 			</div>
 			<div class="contactus">
 				<form action="/action_page.php">
@@ -63,6 +71,7 @@
 					<label for="yes">I have a problem</label>
 					<br>
 					<label class="label-width" for="message">Message:</label>
+					<br>
 					<textarea name="message" id="message"></textarea>
 					<br>
     				<input type="submit" value="Submit">

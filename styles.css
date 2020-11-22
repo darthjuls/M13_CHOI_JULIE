@@ -15,6 +15,7 @@ h1 {
 	text-transform: uppercase;
 	font-family: 'Alata', sans-serif;
 	color: #685381;
+	text-shadow: .75px .75px .75px #808080;
 	}
 h2 {
 	text-align: center;
@@ -27,6 +28,7 @@ h3 {
 	text-transform: uppercase;
 	font-family: 'Alata', sans-serif;
 	color: #fffff;
+	text-align: center;
 }
 p {
 	text-align: left;
@@ -66,48 +68,50 @@ nav li a {
 }
 .flex types {
 	flex-basic: 100%;
+	padding: 1em;
 }
 .flex contactus {
 	flex-basic: 50%;
-	padding: 1em;
+	padding: 3em;
 }
 .flex image {
 	flex-basic: 50%;
-	padding: 1em;
+	padding: 3em;
 }
-.flex image {
-	width: 40vw;
-}
-.contactus {
-	background-color: #685381;
-}
-/*.grid {
-  	display: grid;
-  	grid-template-areas:
-    '1 1'
-    '2 2'
-	'3 4';
-	padding: 1em;
-	grid-gap: 1em;
-	}	
-.main {
-	grid-area: 1;
-	background-color: #ffffff;
-	padding: 1rem;
-	width: 100%;
-	text-align: justify;
-	}
-.types {
-	grid-area: 2;
-}
-.contactus {
-	grid-area: 3;
-	background-color: #685381;
-	}
-.image {
-	grid-area: 4;
+.image img {
 	width: 45vw;
-	}*/
+	height: auto;
+	border: 1em solid #F6D0C0;
+}
+/*TYPES*/
+.thumbnail {
+	display: inline-block;	
+}
+.thumbnail img {
+	object-fit: contain;
+}
+.thumbnail h3 {
+	text-decoration: none;
+	color: #fffff;
+}
+/*FORMS*/
+.contactus {
+	background-color: #685381;
+}
+form {
+	color: #fffff;
+	padding: 1em;
+	text-align: left;
+}
+input[type=text] {
+	width: 30vw;
+	height: 2vh;	
+}
+textarea {
+	width: 30vw;
+	height: 10vh;
+}
+/*FOOTER*/
 footer {
 	background-image: -webkit-linear-gradient(left, #F6D0C0, #D8A8D3, #B8CBE5);
 	width: 100%;
