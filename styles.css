@@ -33,6 +33,9 @@ h3 {
 p {
 	text-align: left;
 }
+
+
+/*NAV*/
 nav {
     background-image: -webkit-linear-gradient(left, #F6D0C0, #D8A8D3, #B8CBE5);
 	width: 100%;
@@ -52,6 +55,9 @@ nav li a {
 	text-decoration: none;
 	text-shadow: .75px .75px .75px #808080;
 }
+
+
+/*LAYOUT*/
 .flex {
 	display: flex;
 	flex-wrap: wrap;
@@ -59,58 +65,84 @@ nav li a {
 	padding: 1em;
 	position: relative;
 }
-.flex header {
-	flex-basic: 100%;
-}
 .flex main {
 	flex-basic: 100%;
 	padding: 1em;
 }
-.flex types {
+/*.flex types {
 	flex-basic: 100%;
-	padding: 1em;
-}
+	padding: 5em;
+}*/
 .flex contactus {
 	flex-basic: 50%;
-	padding: 3em;
+	padding: 5em;
 }
-.flex image {
+.flex florist {
 	flex-basic: 50%;
-	padding: 3em;
+	padding: 5em;
 }
-.image img {
-	width: 45vw;
-	height: auto;
-	border: 1em solid #F6D0C0;
-}
+
+
 /*TYPES*/
-.thumbnail {
-	display: inline-block;	
+.types {
+	display: inline;
 }
-.thumbnail img {
-	object-fit: contain;
+.thumbnail {
+	float: left;
+	padding: 1.5em;
+}
+#bouquets {
+	border: 1.5em solid #D8A8D3;
+	width: 20vw;
+}
+#arrangements {
+	border: 2em solid #B8CBE5;
+	width: 20vw;	
+}
+#occasions {
+	border: 2em solid #F6D0C0;
+	width: 20vw;	
 }
 .thumbnail h3 {
 	text-decoration: none;
 	color: #fffff;
 }
-/*FORMS*/
+.cards {
+	width: 100%;
+	height: auto;
+}
+
+
+/*FORM*/
 .contactus {
 	background-color: #685381;
+	width: 44vw;
+	margin-left: 1.5em;
 }
 form {
-	color: #fffff;
-	padding: 1em;
+	color: #ffffff;
+	padding: 2em;
 	text-align: left;
 }
 input[type=text] {
 	width: 30vw;
-	height: 2vh;	
+	height: 1.5em;	
 }
 textarea {
 	width: 30vw;
-	height: 10vh;
+	height: 10em;
 }
+
+/*IMAGE*/
+.florist {
+	margin-right: 2em;
+	border: .5em solid #ffffff;
+	outline: .25em solid #F6D0C0;
+}
+.florist img {
+	width: 40vw;
+}
+
 /*FOOTER*/
 footer {
 	background-image: -webkit-linear-gradient(left, #F6D0C0, #D8A8D3, #B8CBE5);
