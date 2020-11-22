@@ -17,6 +17,7 @@ header img {
 
 }
 h1 {
+	text-transform: uppercase;
 	font-family: 'Alata', sans-serif;
 	color: #685381;
 	}
@@ -25,6 +26,11 @@ h2 {
 	font-family: 'Alata', sans-serif;
 	color: #685381;
 	}
+h3 {
+	text-transform: uppercase;
+	font-family: 'Alata', sans-serif;
+	color: #fffff;
+}
 nav {
     background-image: -webkit-linear-gradient(left, #F6D0C0, #D8A8D3, #B8CBE5);
 	width: 100%;
@@ -43,26 +49,37 @@ nav li a {
 	text-decoration: none;
 }
 .grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas:
-		'a a'
-		'b c';
-	margin: 2rem 0;
+  	display: grid;
+  	grid-template-areas:
+    '1 1 1'
+    '2 3 4'
+	'5 6';
+	padding: 1em;
+	grid-gap: 1em;
 	}	
-.grid main {
-	grid-area: a;
+.main {
+	grid-area: 1;
 	background-color: #ffffff;
 	padding: 1rem;
 	width: 100%;
+	text-align: justify;
 	}
-.grid section:first-of-type {
-	grid-area: b;
+.bouquets {
+	grid-area: 2;
+}
+.arrangements {
+	grid-area: 3;
+}
+.occasions {
+	grid-area: 4;
+}
+.contactus {
+	grid-area: 5;
 	background-color: #685381;
 	padding: 1rem;
 	}
-.grid section:last-of-type {
-	grid-area: c;
+.image {
+	grid-area: 6;
 	padding: 1rem;
 	width: 50%;
 	}
@@ -70,4 +87,10 @@ footer {
 	background-image: -webkit-linear-gradient(left, #F6D0C0, #D8A8D3, #B8CBE5);
 	width: 100%;
 	padding: .25em;
+	
 	}
+footer ul {
+	color: #ffffff;
+	list-style-type: none;
+	position: center;
+}
