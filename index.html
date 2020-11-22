@@ -26,10 +26,40 @@
 		</header>
 		<div class="grid">
 			<div class="main">
-				<h2>FLOWERS FOR ALL OCCASIONS</h2>
+				<h2>Flowers for All Occasions</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis nisi quis eros ullamcorper ultricies. Suspendisse sit amet urna vulputate, bibendum urna commodo, congue dui. Sed tristique odio in risus pretium, vel maximus mauris vehicula. Integer non ante ac diam pulvinar ultricies eget ac velit. Donec tincidunt diam neque, accumsan sodales ex euismod et. Integer congue erat et vulputate fermentum. Aenean vitae sagittis augue, nec maximus purus. Cras consequat aliquam tempus. Integer auctor tortor eros, nec scelerisque diam porttitor id. In rhoncus ex vel tellus ultricies, ut.</p>
 			</div>
 			<section>
+				<form action="/action_page.php">
+					<legend>Contact Us</legend>
+					<label for="fname">First Name:</label>
+					<br>
+					<input type="text" id="fname" name="fname">
+					<br>
+					<label for="lname">Last Name:</label>
+					<br>
+					<input type="text" id="lname" name="lname">
+					<br>
+					<label for="email">Enter your Email:</label>
+					<br>
+					<input type="text" id="email" name="email">
+					<br>
+					<label for="reason">Reasons for Contacting:</label>
+					<br>
+					<input type="radio" id="question" name="reason" value="question">
+					<label for="question">I have a question</label>
+					<br>
+					<input type="radio" id="order" name="reason" value="order">
+					<label for="order">I'd like to order</label>
+					<br>
+					<input type="radio" id="problem" name="reason" value="problem">
+					<label for="yes">I have a problem</label>
+					<br>
+					<label class="label-width" for="message">Message:</label>
+					<textarea name="message" id="message"></textarea>
+					<br>
+    				<input type="submit" value="Submit">
+  				</form>
 			</section>
 			<section>
 				<img src="images/florist.jpeg" alt="florist">
