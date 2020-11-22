@@ -5,30 +5,66 @@ Phones: 320 - 767
 Tablets: 768 - 1023
 Desktop: 1024+ */
 
-@media (min-width: 1024px){
 body {
 	font-family: sans-serif;
 	text-align: center;
 	margin: 0;
 	padding: 0;
 	}
+header img {
+	width: 15%;
+	height: auto;
+
 }
+h1 {
+	font-family: 'Alata', sans-serif;
+	color: #685381;
+	}
+h2 {
+	text-transform: uppercase;
+	font-family: 'Alata', sans-serif;
+	color: #685381;
+	}
+nav {
+    background-image: -webkit-linear-gradient(left, #F6D0C0, #D8A8D3, #B8CBE5);
+	width: 100%;
+	padding: .25em;
+}
+nav ul {
+	list-style-type: none;
+	position: center;
+}
+nav ul li {
+	display: inline;
+	font-size: 1.25rem;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
-		"a a"
-		"b c";
+		'a a'
+		'b c';
 	margin: 2rem 0;
 	}	
-. grid::before {
-	content: 'display: grid';
-	}
 .grid main {
 	grid-area: a;
 	background-color: #ffffff;
-}
-.grid contact {
+	padding: 1rem;
+	width: 100%;
+	}
+.grid section:first-of-type {
+	grid-area: b;
 	background-color: #685381;
-}
-}
+	padding: 1rem;
+	}
+.grid section:last-of-type {
+	grid-area: c;
+	padding: 1rem;
+	width: 50%;
+	}
+footer {
+	background-image: -webkit-linear-gradient(left, #F6D0C0, #D8A8D3, #B8CBE5);
+	width: 100%;
+	padding: .25em;
+	}
